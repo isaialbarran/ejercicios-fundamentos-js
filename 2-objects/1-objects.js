@@ -6,7 +6,23 @@
 
 // Aquí tu código
 
+ordenador = {
+    marca:"La pava",
+    tipo:"portátil",
+    perifericos: [
+        'canal',
+        'touchPad'
+    ],
+    almacenamiento :{
+        maestro : 0,
+        discos : [
+            'SSD',
+            'HDD',
+        ],
+    }
+};
 
+//ordenador.almacenamiento.discos[ ordenador.almacenamiento.maestro ] === 'SSD')
 
 // Hasta aquí
 

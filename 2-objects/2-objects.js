@@ -5,7 +5,14 @@
 
 
 // Aquí tu código
-
+ var obj = {
+        a : {
+            b: true,
+            c: ['Hola', 6],
+        },
+        d : 6,
+        f : 'Stri'
+ }
 // Hasta aquí
 
 // TEST 1

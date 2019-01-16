@@ -12,3 +12,16 @@ let matriz = [
     [],
     []
 ]
+
+for(var i = 0; i < matriz.length; i++){
+    var str = '';
+    for(var j = 0; j < matriz.length; j++){
+        str += ' '+i+""+j;
+    }
+    console.log(str);
+}
+
+console.log(matriz);
+
+
+
