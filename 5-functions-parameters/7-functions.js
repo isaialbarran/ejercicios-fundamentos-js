@@ -8,19 +8,23 @@
 
 // Aquí tu código
 
+let convierteEurosEnPesetas = (euros) => {
+    let pesetas = euros * 168;
+    return pesetas;
+}
 
 // Hasta aquí
 
 
 // TEST 1
-if (typeof convierteEurosEnPesetas === 'function' ) {
+if (typeof convierteEurosEnPesetas === 'function') {
     console.log('apruebas:  convierteEurosEnPesetas es una función');
 } else {
     console.log('suspendes:  convierteEurosEnPesetas NO es una función');
 }
 
 // TEST 2
-if ( convierteEurosEnPesetas(2) === 336) {
+if (convierteEurosEnPesetas(2) === 336) {
     console.log('apruebas:  2 euros son 336 pesetas');
 } else {
     console.log('suspendes');

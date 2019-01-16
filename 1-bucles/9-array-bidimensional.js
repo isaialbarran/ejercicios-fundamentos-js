@@ -1,4 +1,3 @@
-
 // ej 9
 // Rellena la matriz como la siguiente utilizando bucles for anidados
 // let matriz = [
@@ -7,21 +6,19 @@
 //   ['20','21','22']
 // ];
 
-let matriz = [
+var matriz = [
     [],
     [],
     []
 ]
 
-for(var i = 0; i < matriz.length; i++){
+for (var i = 0; i < matriz.length; i++) {
     var str = '';
-    for(var j = 0; j < matriz.length; j++){
-        str += ' '+i+""+j;
+    for (var j = 0; j < matriz.length; j++) {
+        matriz[i][j] = i + '' + j;
+        //str += ' ' + i + "" + j + ',';
     }
     console.log(str);
 }
 
 console.log(matriz);
-
-
-
