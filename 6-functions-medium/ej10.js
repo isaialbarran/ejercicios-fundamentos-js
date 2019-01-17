@@ -13,11 +13,18 @@
 // Ha de pasar los test adjuntados.
 
 // Aquí tu código.  Desde aquí:
-const conCuantosParametrosMeHanEjecutado;
+let conCuantosParametrosMeHanEjecutado = (s, ...manyMoreArgs) => {
+    if (s == undefined) {
+        return manyMoreArgs.length;
+    } else {
+        return manyMoreArgs.length + 1;
+    }
+};
+
 // Hasta aquí.
 
 
-let test = require('../../test.js');
+let test = require('../test.js');
 
 // console.log(conCuantosParametrosMeHanEjecutado(1, 2, 3, 4) === 4);
 // console.log(conCuantosParametrosMeHanEjecutado('aswd') === 1);
@@ -26,4 +33,4 @@ let test = require('../../test.js');
 
 test(conCuantosParametrosMeHanEjecutado, [], 0);
 test(conCuantosParametrosMeHanEjecutado, ['hola', 'caracola'], 2);
-test(conCuantosParametrosMeHanEjecutado, ['33', '44',' '], 3);
+test(conCuantosParametrosMeHanEjecutado, ['33', '44', ' '], 3);

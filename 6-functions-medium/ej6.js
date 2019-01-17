@@ -13,13 +13,19 @@
 let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     let arrayDeLongitudes = [];
     // Aquí tu código.  Desde aquí:
-
+    if (typeof arrayDeStrings === 'object' && arrayDeStrings.length >= 0) {
+        for (let index = 0; index < arrayDeStrings.length; index++) {
+            arrayDeLongitudes.push(arrayDeStrings[index].length);
+        }
+    } else {
+        return 'Debo ser ejecutada con un array';
+    }
     // Hasta aquí.
     return arrayDeLongitudes
 }
 
 
-let test = require('../../test.js');
+let test = require('../test.js');
 test(transformaArrayEnOtraConSusLongitudes, [
     ['juan', 'paco', 'pepe']
 ], [4, 4, 4]);
